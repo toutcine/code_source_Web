@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 
 <head>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
 <title>One Movies an Entertainment Category Flat Bootstrap Responsive Website Template | List :: w3layouts</title>
 <%@ include file="include.jsp" %>
 <script type="text/javascript" src="js/move-top.js"></script>
