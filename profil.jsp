@@ -28,6 +28,7 @@
                 <div class="container">
                     <div class="page-header text-center">
                         <div class="col-md-5">
+                       
                             <h2 style="font-family:user;font-size: 50px">
                                 <script>
                                     document.write("<img src='" + sessionStorage.avatar + "' width='120px' height='120px' class='img-circle'>");
@@ -43,7 +44,7 @@
                                 <img src="images/notification.png" width="30px" height="30px">
                             </div><br>
                             <div class="list-group ">
-                                <a data-toggle="modal" href="#comments" class="list-group-item"><i class="icon icon-sign-out icon-lg"></i> <span class="badge badge-danger"><div id="nombreFavoris"></div></span> Nombre favoris</a>
+                                <a data-toggle="modal" href="#favoris" class="list-group-item"><i class="icon icon-sign-out icon-lg"></i> <span class="badge badge-danger"><div id="nombreFavoris"></div></span> Nombre favoris</a>
                                 <a data-toggle="modal" href="#comments" class="list-group-item"><i class="icon icon-sign-out icon-lg"></i> <span class="badge badge-success"><div id="nombreComments"></div></span> Nombre de commentaire</a>
                             </div>
                         </div>
@@ -93,7 +94,7 @@
                             </div>
                             <div class="modal-body">
                                 <div id="listeFavoris">
-
+                                         
                                 </div>
                             </div>
                             <div class="modal-footer" style="background-color:#DDDDDD">
@@ -118,7 +119,7 @@
                                 </div>
                             </div>
                             <div class="modal-footer" style="background-color:#DDDDDD">
-                                <button type="button" class="btn btn-inverse" data-dismiss="modal"><i class="icon icon-times icon-lg"></i> <img src="images/ok-icon.png" width="40px" height="40px"></button>
+                                <button type="button" class="btn btn-inverse" data-dismiss="modal"><i class="icon icon-times icon-lg"></i> <img src="https://webavance.000webhostapp.com/toutCine/img/ok-icon.png" width="40px" height="40px"></button>
                             </div>
                         </div>
                     </div>
