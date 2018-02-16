@@ -27,4 +27,24 @@ ajaxGet(url, function (reponse) {
     }
 });
 
+var listeFavoris = document.getElementById("listeFavoris");
+var url = "http://cinetout.herokuapp.com/comment/getAllClient/"+get_id;
+ajaxGet(url, function (reponse) {
+    var comments = JSON.parse(reponse);
+    var data_length = comments.length;
+    for (var i = 0; i < data_length; i++) {
+        var laDate = comments[i]["date"].split("/");
+        var url2 = "http://cinetout.herokuapp.com/cine/getFiche/"+comments[i]["idFilm"];
+        ajaxGet(url2, function (reponses) {
+            var film = JSON.parse(reponses);
+            var paragraphe = document.createElement("p");
+                paragraphe.innerHTML = "<div class='col-md-3'>"+
+                                        "<img src='"+film.affiche+"'>"+
+                                        "<p>"+film.titre+"</p>"+
+                                    "</div>";
+                listeFavoris.appendChild(paragraphe);
+        });
+    }
+});
+
 
